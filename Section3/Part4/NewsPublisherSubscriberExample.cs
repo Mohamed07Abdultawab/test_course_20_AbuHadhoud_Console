@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace test_course_20_AbuHadhoud_Console.section6
+namespace test_course_20_AbuHadhoud_Console.Section3.Part4
 {
     public class NewArticle
     {
@@ -13,8 +13,8 @@ namespace test_course_20_AbuHadhoud_Console.section6
 
         public NewArticle(string title, string content)
         {
-            this.Title = title;
-            this.Content = content;
+            Title = title;
+            Content = content;
         }
     }
 
@@ -43,7 +43,7 @@ namespace test_course_20_AbuHadhoud_Console.section6
             public string Name { get; set; }
             public NewSubscriber(string name)
             {
-                this.Name = name;
+                Name = name;
             }
 
             public void Subscribe(NewPublisher publisher)

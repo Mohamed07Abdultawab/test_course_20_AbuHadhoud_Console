@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace test_course_20_AbuHadhoud.section5
+namespace test_course_20_AbuHadhoud_Console.Section3.Part3
 {
     //bag
     public class TemperatureChangeEventArgs : EventArgs

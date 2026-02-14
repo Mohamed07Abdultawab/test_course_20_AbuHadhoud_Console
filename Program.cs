@@ -1,4 +1,5 @@
-﻿using test_course_20_AbuHadhoud_Console.section6;
+﻿using test_course_20_AbuHadhoud_Console.Section3.Part3;
+using test_course_20_AbuHadhoud_Console.Section3.Part4;
 
 namespace test_course_20_AbuHadhoud_Console
 {
