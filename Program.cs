@@ -1,5 +1,6 @@
 ﻿using test_course_20_AbuHadhoud_Console.Section3.Part3;
 using test_course_20_AbuHadhoud_Console.Section3.Part4;
+using test_course_20_AbuHadhoud_Console.Section3.Part5;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -8,7 +9,7 @@ namespace test_course_20_AbuHadhoud_Console
         static void Main()
         {
             /*
-                        //section 5
+                        //section 3 part 3
                         Thermostat thermostat = new Thermostat();
                         Display display = new Display();
 
@@ -22,26 +23,41 @@ namespace test_course_20_AbuHadhoud_Console
 
                         Console.ReadLine();
             */
+            /*
 
+                        //section 3 part 4
+                        NewPublisher publisher = new NewPublisher();
 
-            //section 6
-            NewPublisher publisher = new NewPublisher();
+                        NewSubscriber subscriber1 = new NewSubscriber("subscriber 1");
+                        subscriber1.Subscribe(publisher);
 
-            NewSubscriber subscriber1 = new NewSubscriber("subscriber 1");
-            subscriber1.Subscribe(publisher);
+                        NewSubscriber subscriber2 = new NewSubscriber("subscriber 2");
+                        subscriber2.Subscribe(publisher);
 
-            NewSubscriber subscriber2 = new NewSubscriber("subscriber 2");
-            subscriber2.Subscribe(publisher);
+                        publisher.PublishNews("Breaking News: C# 10 Released!", "Microsoft has announced the release of C# 10, bringing new features and improvements to the language.");
 
-            publisher.PublishNews("Breaking News: C# 10 Released!", "Microsoft has announced the release of C# 10, bringing new features and improvements to the language.");
+                        subscriber1.UnSubscribe(publisher);
 
-            subscriber1.UnSubscribe(publisher);
+                        publisher.PublishNews("Tech Update: AI Advancements in 2024", "The field of artificial intelligence continues to evolve rapidly, with new breakthroughs and applications emerging in 2024.");
 
-            publisher.PublishNews("Tech Update: AI Advancements in 2024", "The field of artificial intelligence continues to evolve rapidly, with new breakthroughs and applications emerging in 2024.");
+                        subscriber2.UnSubscribe(publisher);
 
-            subscriber2.UnSubscribe(publisher);
+                        publisher.PublishNews("Global News: Climate Change Summit 2024", "World leaders gather for the Climate Change Summit 2024 to discuss strategies for combating global warming and promoting sustainability.");
 
-            publisher.PublishNews("Global News: Climate Change Summit 2024", "World leaders gather for the Climate Change Summit 2024 to discuss strategies for combating global warming and promoting sustainability.");
+            */
+
+            //section 3 part5
+            var order = new Order();
+            EmailService emailService = new EmailService();
+            SMSService smsService = new SMSService();
+            ShippingService shippingService = new ShippingService();
+
+            emailService.Subscribe(order);
+            smsService.Subscribe(order);
+            shippingService.Subscribe(order);
+
+            order.Create(1, 200, "Ahmed@gmail.com");
+
 
 
         }
