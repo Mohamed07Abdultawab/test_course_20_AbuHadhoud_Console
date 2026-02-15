@@ -65,16 +65,38 @@ namespace test_course_20_AbuHadhoud_Console
                         order.Create(1, 200, "Ahmed@gmail.com");
             */
 
-            //section 4 part 2
-            //constructor take a delegate as parameter
-            //to determine the logging method
-            //so the two function have the same signature of the delegate
-            //so we can pass them as parameter to the constructor
-            Logger ScreenLogger = new Logger(LogTo.LogToScreen);
-            Logger FileLogger = new Logger(LogTo.LogToFile);
 
-            ScreenLogger.Log("This message will be logged to the screen.");
-            FileLogger.Log("This message will be logged to a file.");
+            /*
+                        //section 4 part 2
+                        //constructor take a delegate as parameter
+                        //to determine the logging method
+                        //so the two function have the same signature of the delegate
+                        //so we can pass them as parameter to the constructor
+                        Logger ScreenLogger = new Logger(LogTo.LogToScreen);
+                        Logger FileLogger = new Logger(LogTo.LogToFile);
+
+                        ScreenLogger.Log("This message will be logged to the screen.");
+                        FileLogger.Log("This message will be logged to a file.");
+
+            */
+
+            /*
+
+                        //section 4 part 4 & part 5 & part 6 and section5 (lamba expression, Func, Action, Predicate)
+                        //Func have a return type and can take parameters
+                        Func<int, int, int> add = (a, b) => a + b;
+                        Console.WriteLine( add.Invoke(5, 3)); // Output: 8
+
+                        //Action have no return type and can take parameters
+                        Action<string,string> printMessage = (message1, message2) => Console.WriteLine($"{message1} {message2}");
+                        printMessage.Invoke("Hello", "World!"); // Output: Hello World!
+
+
+                        //Predicate return a boolean value and can take parameters
+                        Predicate<int> isEven = number => number % 2 == 0;
+                        Console.WriteLine(isEven.Invoke(4)); // Output: true
+            */
+
 
 
 
