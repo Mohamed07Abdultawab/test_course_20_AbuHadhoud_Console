@@ -97,7 +97,7 @@ namespace test_course_20_AbuHadhoud_Console
                         Console.WriteLine(isEven.Invoke(4)); // Output: true
             */
 
-
+           
 
 
         }
