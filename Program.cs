@@ -1,6 +1,7 @@
 ﻿using test_course_20_AbuHadhoud_Console.Section3.Part3;
 using test_course_20_AbuHadhoud_Console.Section3.Part4;
 using test_course_20_AbuHadhoud_Console.Section3.Part5;
+using test_course_20_AbuHadhoud_Console.Section4.Part2;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -46,17 +47,34 @@ namespace test_course_20_AbuHadhoud_Console
 
             */
 
-            //section 3 part5
-            var order = new Order();
-            EmailService emailService = new EmailService();
-            SMSService smsService = new SMSService();
-            ShippingService shippingService = new ShippingService();
 
-            emailService.Subscribe(order);
-            smsService.Subscribe(order);
-            shippingService.Subscribe(order);
 
-            order.Create(1, 200, "Ahmed@gmail.com");
+            /*
+                        //section 3 part5
+                        var order = new Order();
+
+                        EmailService emailService = new EmailService();
+                        SMSService smsService = new SMSService();
+                        ShippingService shippingService = new ShippingService();
+
+                        emailService.Subscribe(order);
+                        smsService.Subscribe(order);
+                        shippingService.Subscribe(order);
+                        shippingService.Unsubscribe(order);
+
+                        order.Create(1, 200, "Ahmed@gmail.com");
+            */
+
+            //section 4 part 2
+            //constructor take a delegate as parameter
+            //to determine the logging method
+            //so the two function have the same signature of the delegate
+            //so we can pass them as parameter to the constructor
+            Logger ScreenLogger = new Logger(LogTo.LogToScreen);
+            Logger FileLogger = new Logger(LogTo.LogToFile);
+
+            ScreenLogger.Log("This message will be logged to the screen.");
+            FileLogger.Log("This message will be logged to a file.");
 
 
 

@@ -32,7 +32,7 @@ namespace test_course_20_AbuHadhoud_Console.Section3.Part5
             if(OnOrderCreated != null)
             {
                 OnOrderCreated.Invoke(this, new OrderEventArgs(orderID, orederTotalPrice, clientEmail));
-            } 
+            }
         }
     }
 
