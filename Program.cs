@@ -97,7 +97,31 @@ namespace test_course_20_AbuHadhoud_Console
                         Console.WriteLine(isEven.Invoke(4)); // Output: true
             */
 
-           
+
+
+            //section 7 prat 1
+            //Nullable Data Types
+            //int x = null; // This will cause a compile-time error because int is a value type and cannot be null
+            Nullable<int> nullableInt = null;
+
+            if (nullableInt.HasValue)
+            {
+                Console.WriteLine("nullableInt has a value: " + nullableInt.Value);
+            }
+            else
+            {
+                Console.WriteLine("nullableInt does not have a value.");
+            }
+
+            //if i don't use int? i will get an error because int is a value type and cannot be null
+            int? nullableInt2 = 5; //using shorthand syntax for nullable types
+
+            int result = nullableInt2 ?? 0; //if nullableInt has a value use it, otherwise use 0
+            Console.WriteLine("using null-coalescing operator: " + result);
+
+            //if nullableInt has a value convert it to string, otherwise use "No value"
+            string stringValue = nullableInt2?.ToString() ?? "No value";
+            Console.WriteLine("using null-conditional operator: " + stringValue);
 
 
         }
