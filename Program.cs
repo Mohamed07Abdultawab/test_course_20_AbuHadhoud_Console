@@ -5,6 +5,7 @@ using test_course_20_AbuHadhoud_Console.Section4.Part2;
 using test_course_20_AbuHadhoud_Console.section7.part2;
 using test_course_20_AbuHadhoud_Console.section8.part2;
 using test_course_20_AbuHadhoud_Console.section8.part3;
+using test_course_20_AbuHadhoud_Console.section8.part4;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -140,12 +141,17 @@ namespace test_course_20_AbuHadhoud_Console
                         Console.ReadLine();
 
             */
+            /*
+                        //section 8 part 3
+                        //Json_Serialization_Example example = new Json_Serialization_Example();
+                        Json_Serialization_Example json = new Json_Serialization_Example();
+                        json.RunDemo();
+            */
 
-            //section 8 part 3
-            //Json_Serialization_Example example = new Json_Serialization_Example();
-            Json_Serialization_Example json = new Json_Serialization_Example();
-            json.RunDemo();
-
+            //section 8 part 4
+            //Binary_Serialization_Example binary = new Binary_Serialization_Example();
+            Binary_Serialization_Example binary = new Binary_Serialization_Example();
+            binary.RunDemo();
         }
     }
 }
