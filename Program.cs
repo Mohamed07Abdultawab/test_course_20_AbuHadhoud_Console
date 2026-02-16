@@ -4,6 +4,7 @@ using test_course_20_AbuHadhoud_Console.Section3.Part5;
 using test_course_20_AbuHadhoud_Console.Section4.Part2;
 using test_course_20_AbuHadhoud_Console.section7.part2;
 using test_course_20_AbuHadhoud_Console.section8.part2;
+using test_course_20_AbuHadhoud_Console.section8.part3;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -132,11 +133,19 @@ namespace test_course_20_AbuHadhoud_Console
             */
 
 
+            /*
+                        //section 8 part 2
+                        XML_Serialization_Example example = new XML_Serialization_Example();
+                        example.RunDemo();
+                        Console.ReadLine();
 
-            //section 8 part 2
-            XML_Serialization_Example example = new XML_Serialization_Example();
-            example.RunDemo();
-            Console.ReadLine();
+            */
+
+            //section 8 part 3
+            //Json_Serialization_Example example = new Json_Serialization_Example();
+            Json_Serialization_Example json = new Json_Serialization_Example();
+            json.RunDemo();
+
         }
     }
 }
