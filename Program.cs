@@ -2,6 +2,7 @@
 using test_course_20_AbuHadhoud_Console.Section3.Part4;
 using test_course_20_AbuHadhoud_Console.Section3.Part5;
 using test_course_20_AbuHadhoud_Console.Section4.Part2;
+using test_course_20_AbuHadhoud_Console.section7.part2;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -98,31 +99,35 @@ namespace test_course_20_AbuHadhoud_Console
             */
 
 
+            /*
+                        //section 7 prat 1
+                        //Nullable Data Types
+                        //int x = null; // This will cause a compile-time error because int is a value type and cannot be null
+                        Nullable<int> nullableInt = null;
 
-            //section 7 prat 1
-            //Nullable Data Types
-            //int x = null; // This will cause a compile-time error because int is a value type and cannot be null
-            Nullable<int> nullableInt = null;
+                        if (nullableInt.HasValue)
+                        {
+                            Console.WriteLine("nullableInt has a value: " + nullableInt.Value);
+                        }
+                        else
+                        {
+                            Console.WriteLine("nullableInt does not have a value.");
+                        }
 
-            if (nullableInt.HasValue)
-            {
-                Console.WriteLine("nullableInt has a value: " + nullableInt.Value);
-            }
-            else
-            {
-                Console.WriteLine("nullableInt does not have a value.");
-            }
+                        //if i don't use int? i will get an error because int is a value type and cannot be null
+                        int? nullableInt2 = 5; //using shorthand syntax for nullable types
 
-            //if i don't use int? i will get an error because int is a value type and cannot be null
-            int? nullableInt2 = 5; //using shorthand syntax for nullable types
+                        int result = nullableInt2 ?? 0; //if nullableInt has a value use it, otherwise use 0
+                        Console.WriteLine("using null-coalescing operator: " + result);
 
-            int result = nullableInt2 ?? 0; //if nullableInt has a value use it, otherwise use 0
-            Console.WriteLine("using null-coalescing operator: " + result);
+                        //if nullableInt has a value convert it to string, otherwise use "No value"
+                        string stringValue = nullableInt2?.ToString() ?? "No value";
+                        Console.WriteLine("using null-conditional operator: " + stringValue);
+            */
 
-            //if nullableInt has a value convert it to string, otherwise use "No value"
-            string stringValue = nullableInt2?.ToString() ?? "No value";
-            Console.WriteLine("using null-conditional operator: " + stringValue);
-
+            //section 7 part 2
+            Nullable_Datatypes_Example_2.Procedure1("Ahmed", null);
+            Nullable_Datatypes_Example_2.Procedure2("Mohamed",null);
 
         }
     }
