@@ -3,6 +3,7 @@ using test_course_20_AbuHadhoud_Console.Section3.Part4;
 using test_course_20_AbuHadhoud_Console.Section3.Part5;
 using test_course_20_AbuHadhoud_Console.Section4.Part2;
 using test_course_20_AbuHadhoud_Console.section7.part2;
+using test_course_20_AbuHadhoud_Console.section8.part2;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -124,11 +125,18 @@ namespace test_course_20_AbuHadhoud_Console
                         string stringValue = nullableInt2?.ToString() ?? "No value";
                         Console.WriteLine("using null-conditional operator: " + stringValue);
             */
+            /*
+                        //section 7 part 2
+                        Nullable_Datatypes_Example_2.Procedure1("Ahmed", null);
+                        Nullable_Datatypes_Example_2.Procedure2("Mohamed",null);
+            */
 
-            //section 7 part 2
-            Nullable_Datatypes_Example_2.Procedure1("Ahmed", null);
-            Nullable_Datatypes_Example_2.Procedure2("Mohamed",null);
 
+
+            //section 8 part 2
+            XML_Serialization_Example example = new XML_Serialization_Example();
+            example.RunDemo();
+            Console.ReadLine();
         }
     }
 }
