@@ -1,0 +1,21 @@
+﻿Attributes play a crucial role in: 
+Enhancing code readability
+Providing additional information about code elements (meta data)
+enabling frameworks and tools to understand and process your code more effectively]
+is widely used in -> serialization, documentation, testing and more
+
+[Serializable]
+public class MyClass
+{
+	[Obsolete("This method is deprecated. Use NewMethod instead.")]
+	public void OldMethod()
+	{
+		// ...
+	} 
+
+	[Conditional("DEBUG")]
+	public void DebugOnlyMethod()
+	{
+		// This method will only be called in debug builds
+	}
+} 
