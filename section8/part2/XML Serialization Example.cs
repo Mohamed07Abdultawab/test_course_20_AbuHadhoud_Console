@@ -24,11 +24,11 @@ namespace test_course_20_AbuHadhoud_Console.section8.part2
             // يفضل استخدام مسار كامل أو التأكد من مكان الملف، هنا سيتم حفظه بجانب ملف الـ exe
             string fileName = "person.xml";
 
-            //using (TextWriter writer = new StreamWriter(fileName))
-            //{
-            //    serializer.Serialize(writer, person);
-            //    Console.WriteLine("Data Saved to person.xml");
-            //}
+            using (TextWriter writer = new StreamWriter(fileName))
+            {
+                serializer.Serialize(writer, person);
+                Console.WriteLine("Data Saved to person.xml");
+            }
 
             // 2. Deserialization
             using (TextReader reader = new StreamReader(fileName))
