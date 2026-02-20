@@ -8,6 +8,8 @@ using test_course_20_AbuHadhoud_Console.section8.part3;
 using test_course_20_AbuHadhoud_Console.section8.part4;
 using test_course_20_AbuHadhoud_Console.section10.part1;
 using test_course_20_AbuHadhoud_Console.section10.part2;
+using test_course_20_AbuHadhoud_Console.section10.part5;
+
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -162,9 +164,16 @@ namespace test_course_20_AbuHadhoud_Console
                         typeClass.method();
             */
 
+/*
             //section 10 part2
             Navigate_String_Library_Using_Reflection_Example obj = new Navigate_String_Library_Using_Reflection_Example();
             obj.Display();
+*/
+
+            Example_2_Dynamically_Create_Objects_and_Invoke_Methods obj = new Example_2_Dynamically_Create_Objects_and_Invoke_Methods();
+            obj.Display();
+
+
         }
     }
 }
