@@ -6,6 +6,7 @@ using test_course_20_AbuHadhoud_Console.section7.part2;
 using test_course_20_AbuHadhoud_Console.section8.part2;
 using test_course_20_AbuHadhoud_Console.section8.part3;
 using test_course_20_AbuHadhoud_Console.section8.part4;
+using test_course_20_AbuHadhoud_Console.section10.part1;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -147,11 +148,18 @@ namespace test_course_20_AbuHadhoud_Console
                         Json_Serialization_Example json = new Json_Serialization_Example();
                         json.RunDemo();
             */
-
+/*
             //section 8 part 4
             //Binary_Serialization_Example binary = new Binary_Serialization_Example();
             Binary_Serialization_Example binary = new Binary_Serialization_Example();
             binary.RunDemo();
+*/
+
+
+            //section 10 part1
+            TypeClass typeClass = new TypeClass();
+            typeClass.method();
+
         }
     }
 }
