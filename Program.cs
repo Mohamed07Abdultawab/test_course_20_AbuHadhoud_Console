@@ -7,6 +7,7 @@ using test_course_20_AbuHadhoud_Console.section8.part2;
 using test_course_20_AbuHadhoud_Console.section8.part3;
 using test_course_20_AbuHadhoud_Console.section8.part4;
 using test_course_20_AbuHadhoud_Console.section10.part1;
+using test_course_20_AbuHadhoud_Console.section10.part2;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -148,18 +149,22 @@ namespace test_course_20_AbuHadhoud_Console
                         Json_Serialization_Example json = new Json_Serialization_Example();
                         json.RunDemo();
             */
-/*
-            //section 8 part 4
-            //Binary_Serialization_Example binary = new Binary_Serialization_Example();
-            Binary_Serialization_Example binary = new Binary_Serialization_Example();
-            binary.RunDemo();
-*/
+            /*
+                        //section 8 part 4
+                        //Binary_Serialization_Example binary = new Binary_Serialization_Example();
+                        Binary_Serialization_Example binary = new Binary_Serialization_Example();
+                        binary.RunDemo();
+            */
 
+            /*
+                        //section 10 part1
+                        TypeClass typeClass = new TypeClass();
+                        typeClass.method();
+            */
 
-            //section 10 part1
-            TypeClass typeClass = new TypeClass();
-            typeClass.method();
-
+            //section 10 part2
+            Navigate_String_Library_Using_Reflection_Example obj = new Navigate_String_Library_Using_Reflection_Example();
+            obj.Display();
         }
     }
 }
