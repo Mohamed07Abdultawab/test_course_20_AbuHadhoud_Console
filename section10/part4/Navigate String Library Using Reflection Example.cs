@@ -1,4 +1,5 @@
-﻿using System;
+﻿/*
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -46,3 +47,4 @@ namespace test_course_20_AbuHadhoud_Console.section10.part2
         }
     }
 }
+*/
