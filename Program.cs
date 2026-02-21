@@ -9,6 +9,8 @@ using test_course_20_AbuHadhoud_Console.section8.part4;
 using test_course_20_AbuHadhoud_Console.section10.part1;
 using test_course_20_AbuHadhoud_Console.section10.part2;
 using test_course_20_AbuHadhoud_Console.section10.part5;
+using test_course_20_AbuHadhoud_Console.section10.part6;
+
 
 
 namespace test_course_20_AbuHadhoud_Console
@@ -170,7 +172,7 @@ namespace test_course_20_AbuHadhoud_Console
             obj.Display();
 */
 
-            Example_2_Dynamically_Create_Objects_and_Invoke_Methods obj = new Example_2_Dynamically_Create_Objects_and_Invoke_Methods();
+            RwCustomAttributes obj = new RwCustomAttributes();
             obj.Display();
 
 
