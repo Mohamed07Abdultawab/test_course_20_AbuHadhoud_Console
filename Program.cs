@@ -11,7 +11,7 @@ using test_course_20_AbuHadhoud_Console.section10.part2;
 using test_course_20_AbuHadhoud_Console.section10.part5;
 using test_course_20_AbuHadhoud_Console.section10.part6;
 using test_course_20_AbuHadhoud_Console.section10.part7;
-
+using test_course_20_AbuHadhoud_Console.section13.part2;
 
 
 namespace test_course_20_AbuHadhoud_Console
@@ -177,10 +177,14 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
+            /*
+                        //section 10 part7
+                        ValidationExample obj = new ValidationExample();
+                        obj.Display();
+            */
+            Generic_Methods generic_Methods = new Generic_Methods();
+            generic_Methods.Display();
 
-            //section 10 part7
-            ValidationExample obj = new ValidationExample();
-            obj.Display();
 
         }
     }
