@@ -21,7 +21,7 @@ namespace test_course_20_AbuHadhoud_Console.section15
             EventLog.WriteEntry(sourceName, "This is my Warning :-).", EventLogEntryType.Warning);
             EventLog.WriteEntry(sourceName, "This is my Error :-).", EventLogEntryType.Error);
 
-            Console.WriteLine("Event written to the log.");
+            Console.WriteLine("Event written to the log."); 
         }
     }
 }

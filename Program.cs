@@ -16,7 +16,7 @@ using test_course_20_AbuHadhoud_Console.section13.part3;
 using test_course_20_AbuHadhoud_Console.section14.part2;
 using test_course_20_AbuHadhoud_Console.section14.part3;
 using test_course_20_AbuHadhoud_Console.section15;
-
+using System.Configuration;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -201,13 +201,26 @@ namespace test_course_20_AbuHadhoud_Console
             */
 
 
-/*
-            Reading_from_Registry obj = new Reading_from_Registry();
-            obj.Dispay();
-*/
+            /*
+                        Reading_from_Registry obj = new Reading_from_Registry();
+                        obj.Dispay();
+            */
+            /*
+                        Logging_Example obj = new Logging_Example();
+                        obj.Display();
+            */
 
-            Logging_Example obj = new Logging_Example();
-            obj.Display();
+
+            //section 16
+            string connectionString = ConfigurationManager.AppSettings["ConnectionString"];
+            string LogLevel = ConfigurationManager.AppSettings["LogLevel"];
+            
+            string myDbConnection = ConfigurationManager.ConnectionStrings["DbName"].ConnectionString;
+
+
+            Console.WriteLine("\nConnectionString: " + connectionString);
+            Console.WriteLine("\nLogLevel: " + LogLevel);
+            Console.WriteLine("\nmyDbConnection: " + myDbConnection);
         }
     }
 }
