@@ -16,7 +16,10 @@ using test_course_20_AbuHadhoud_Console.section13.part3;
 using test_course_20_AbuHadhoud_Console.section14.part2;
 using test_course_20_AbuHadhoud_Console.section14.part3;
 using test_course_20_AbuHadhoud_Console.section15;
+using test_course_20_AbuHadhoud_Console.section16;
 using System.Configuration;
+using test_course_20_AbuHadhoud_Console.section17;
+using System.Diagnostics;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -210,17 +213,39 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
-
+/*
             //section 16
             string connectionString = ConfigurationManager.AppSettings["ConnectionString"];
             string LogLevel = ConfigurationManager.AppSettings["LogLevel"];
             
             string myDbConnection = ConfigurationManager.ConnectionStrings["DbName"].ConnectionString;
-
+            
 
             Console.WriteLine("\nConnectionString: " + connectionString);
             Console.WriteLine("\nLogLevel: " + LogLevel);
             Console.WriteLine("\nmyDbConnection: " + myDbConnection);
+            
+*/
+            What_is_String_Builder_and_Why obj = new What_is_String_Builder_and_Why();
+            int iterations = 1000000;
+
+            // Concatenating strings using +
+            Stopwatch stopwatch1 = Stopwatch.StartNew();
+            obj.ConcatenateStrings(iterations);
+            stopwatch1.Stop();
+            Console.WriteLine($"String concatenation using + took: {stopwatch1.ElapsedMilliseconds} ms");
+
+            // Concatenating strings using StringBuilder
+            Stopwatch stopwatch2 = Stopwatch.StartNew();
+            obj.ConcatenateStringBuilder(iterations);
+            stopwatch2.Stop();
+            Console.WriteLine($"String concatenation using StringBuilder took: {stopwatch2.ElapsedMilliseconds} ms");
+
+            Console.ReadKey();
+
+
+
+
         }
     }
 }
