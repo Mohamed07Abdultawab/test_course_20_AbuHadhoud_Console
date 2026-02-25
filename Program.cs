@@ -15,6 +15,7 @@ using test_course_20_AbuHadhoud_Console.section13.part2;
 using test_course_20_AbuHadhoud_Console.section13.part3;
 using test_course_20_AbuHadhoud_Console.section14.part2;
 using test_course_20_AbuHadhoud_Console.section14.part3;
+using test_course_20_AbuHadhoud_Console.section15;
 
 
 namespace test_course_20_AbuHadhoud_Console
@@ -198,8 +199,15 @@ namespace test_course_20_AbuHadhoud_Console
                         Writing_to_Registry obj = new Writing_to_Registry();
                         obj.Dispay();
             */
+
+
+/*
             Reading_from_Registry obj = new Reading_from_Registry();
             obj.Dispay();
+*/
+
+            Logging_Example obj = new Logging_Example();
+            obj.Display();
         }
     }
 }

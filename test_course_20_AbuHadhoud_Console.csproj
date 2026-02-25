@@ -8,4 +8,9 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.EventLog" Version="10.0.3" />
+    <PackageReference Include="System.Threading.AccessControl" Version="10.0.3" />
+  </ItemGroup>
+
 </Project>
