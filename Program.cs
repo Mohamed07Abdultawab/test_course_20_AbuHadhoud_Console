@@ -20,6 +20,7 @@ using test_course_20_AbuHadhoud_Console.section16;
 using System.Configuration;
 using test_course_20_AbuHadhoud_Console.section17;
 using System.Diagnostics;
+using test_course_20_AbuHadhoud_Console.section18.part4;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -226,6 +227,8 @@ namespace test_course_20_AbuHadhoud_Console
             Console.WriteLine("\nmyDbConnection: " + myDbConnection);
             
 */
+
+/*
             What_is_String_Builder_and_Why obj = new What_is_String_Builder_and_Why();
             int iterations = 1000000;
 
@@ -242,8 +245,12 @@ namespace test_course_20_AbuHadhoud_Console
             Console.WriteLine($"String concatenation using StringBuilder took: {stopwatch2.ElapsedMilliseconds} ms");
 
             Console.ReadKey();
+*/
 
+            //section18 part4
 
+            Hashing_Example obj = new Hashing_Example();
+            obj.Display();
 
 
         }
