@@ -22,6 +22,7 @@ using test_course_20_AbuHadhoud_Console.section17;
 using System.Diagnostics;
 using test_course_20_AbuHadhoud_Console.section18.part4;
 using test_course_20_AbuHadhoud_Console.section18.part8;
+using test_course_20_AbuHadhoud_Console.section18.part11;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -254,9 +255,13 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
 
             */
-
+/*
             //section18 part8
             Symmetric_Encryption_Example obj = new Symmetric_Encryption_Example();
+            obj.Display();
+*/
+
+            Asymmetric_Encryption_Example obj = new Asymmetric_Encryption_Example();
             obj.Display();
         }
     }
