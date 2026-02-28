@@ -26,6 +26,7 @@ using test_course_20_AbuHadhoud_Console.section18.part11;
 using test_course_20_AbuHadhoud_Console.section18.part13;
 using test_course_20_AbuHadhoud_Console.section19.part2;
 using test_course_20_AbuHadhoud_Console.section20.part05;
+using test_course_20_AbuHadhoud_Console.section20.part07;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -258,27 +259,30 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
 
             */
-/*
-            //section18 part8
-            Symmetric_Encryption_Example obj = new Symmetric_Encryption_Example();
-            obj.Display();
-*/
-/*
-            Asymmetric_Encryption_Example obj = new Asymmetric_Encryption_Example();
-            obj.Display();
-*/
-/*
-            Encrypt_and_Decrypt_Image_Example obj = new Encrypt_and_Decrypt_Image_Example();
-            obj.Display();
-*/
-/*
-            Operator_Overloading_Example obj = new Operator_Overloading_Example();
-            obj.Display();
-*/
+            /*
+                        //section18 part8
+                        Symmetric_Encryption_Example obj = new Symmetric_Encryption_Example();
+                        obj.Display();
+            */
+            /*
+                        Asymmetric_Encryption_Example obj = new Asymmetric_Encryption_Example();
+                        obj.Display();
+            */
+            /*
+                        Encrypt_and_Decrypt_Image_Example obj = new Encrypt_and_Decrypt_Image_Example();
+                        obj.Display();
+            */
+            /*
+                        Operator_Overloading_Example obj = new Operator_Overloading_Example();
+                        obj.Display();
+            */
+            /*
+                        What_is_Thread_Class obj = new What_is_Thread_Class();
+                        obj.Display();
+            */
 
-            What_is_Thread_Class obj = new What_is_Thread_Class();
+            Parameterized_Thread obj = new Parameterized_Thread();
             obj.Display();
-
         }
     }
 }
