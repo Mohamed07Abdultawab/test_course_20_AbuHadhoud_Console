@@ -27,6 +27,7 @@ using test_course_20_AbuHadhoud_Console.section18.part13;
 using test_course_20_AbuHadhoud_Console.section19.part2;
 using test_course_20_AbuHadhoud_Console.section20.part05;
 using test_course_20_AbuHadhoud_Console.section20.part07;
+using test_course_20_AbuHadhoud_Console.section20.part08;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -280,9 +281,15 @@ namespace test_course_20_AbuHadhoud_Console
                         What_is_Thread_Class obj = new What_is_Thread_Class();
                         obj.Display();
             */
+            /*
+                        Parameterized_Thread obj = new Parameterized_Thread();
+                        obj.Display();
+            */
 
-            Parameterized_Thread obj = new Parameterized_Thread();
+
+            Download_3_Web_Pages_using_Multi_Threading obj = new Download_3_Web_Pages_using_Multi_Threading();
             obj.Display();
+
         }
     }
 }
