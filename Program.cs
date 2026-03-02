@@ -28,6 +28,7 @@ using test_course_20_AbuHadhoud_Console.section19.part2;
 using test_course_20_AbuHadhoud_Console.section20.part05;
 using test_course_20_AbuHadhoud_Console.section20.part07;
 using test_course_20_AbuHadhoud_Console.section20.part08;
+using test_course_20_AbuHadhoud_Console.section20.part11;
 
 namespace test_course_20_AbuHadhoud_Console
 {
@@ -286,8 +287,12 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
+            /*
+                        Download_3_Web_Pages_using_Multi_Threading obj = new Download_3_Web_Pages_using_Multi_Threading();
+                        obj.Display();
+            */
 
-            Download_3_Web_Pages_using_Multi_Threading obj = new Download_3_Web_Pages_using_Multi_Threading();
+            Synchronization_Example obj = new Synchronization_Example();
             obj.Display();
 
         }
