@@ -30,12 +30,14 @@ using test_course_20_AbuHadhoud_Console.section20.part07;
 using test_course_20_AbuHadhoud_Console.section20.part08;
 using test_course_20_AbuHadhoud_Console.section20.part11;
 using test_course_20_AbuHadhoud_Console.section21.part3;
+using test_course_20_AbuHadhoud_Console.section21.part4;
+using System.Threading.Tasks;
 
 namespace test_course_20_AbuHadhoud_Console
 {
     internal class Program
     {
-        static void Main()
+        static async Task Main()
         {
             /*
                         //section 3 part 3
@@ -297,10 +299,13 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
+            /*
+                        Task_Class obj = new Task_Class();
+                        obj.Display();
+            */
 
-            Task_Class obj = new Task_Class();
-            obj.Display();
-
+            Task_Class_Example_2 obj = new Task_Class_Example_2();
+            await obj.Display();
         }
     }
 }
