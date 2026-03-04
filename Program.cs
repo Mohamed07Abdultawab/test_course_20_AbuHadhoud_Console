@@ -33,6 +33,7 @@ using test_course_20_AbuHadhoud_Console.section21.part3;
 using test_course_20_AbuHadhoud_Console.section21.part4;
 using test_course_20_AbuHadhoud_Console.section21.part5;
 using test_course_20_AbuHadhoud_Console.section21.part6;
+using test_course_20_AbuHadhoud_Console.section21.part7;
 using System.Threading.Tasks;
 
 namespace test_course_20_AbuHadhoud_Console
@@ -313,9 +314,15 @@ namespace test_course_20_AbuHadhoud_Console
                         await obj.Display();
             */
 
+            /*
+                        Task__Run obj = new Task__Run();
+                        await obj.Display();
+            */
 
-            Task__Run obj = new Task__Run();
-            await obj.Display();
+            Introduction_to_Task_Factory_Class obj = new Introduction_to_Task_Factory_Class();
+            obj.Display();
+
+
         }
     }
 }
