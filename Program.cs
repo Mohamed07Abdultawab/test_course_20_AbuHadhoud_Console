@@ -35,6 +35,7 @@ using test_course_20_AbuHadhoud_Console.section21.part5;
 using test_course_20_AbuHadhoud_Console.section21.part6;
 using test_course_20_AbuHadhoud_Console.section21.part7;
 using test_course_20_AbuHadhoud_Console.section21.part11;
+using test_course_20_AbuHadhoud_Console.section21.part12;
 using System.Threading.Tasks;
 
 namespace test_course_20_AbuHadhoud_Console
@@ -324,9 +325,14 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
-
+/*
             Parallel_For obj = new Parallel_For();
             obj.Display();
+*/
+
+            Parallel_ForEach obj = new Parallel_ForEach();
+            obj.Display();
+
         }
     }
 }
