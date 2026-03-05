@@ -38,12 +38,16 @@ using test_course_20_AbuHadhoud_Console.section21.part11;
 using test_course_20_AbuHadhoud_Console.section21.part12;
 using test_course_20_AbuHadhoud_Console.section21.part13;
 using System.Threading.Tasks;
+using test_course_20_AbuHadhoud_Console.section25.part1;
+using test_course_20_AbuHadhoud_Console.section25.part2;
+
+
 
 namespace test_course_20_AbuHadhoud_Console
 {
     internal class Program
     {
-        static async Task Main()
+        static void Main()
         {
             /*
                         //section 3 part 3
@@ -326,18 +330,29 @@ namespace test_course_20_AbuHadhoud_Console
                         obj.Display();
             */
 
-/*
-            Parallel_For obj = new Parallel_For();
-            obj.Display();
-*/
-/*
-            Parallel_ForEach obj = new Parallel_ForEach();
-            obj.Display();
-*/
+            /*
+                        Parallel_For obj = new Parallel_For();
+                        obj.Display();
+            */
+            /*
+                        Parallel_ForEach obj = new Parallel_ForEach();
+                        obj.Display();
+            */
 
+            /*
+                        Parallel_Invoke obj = new Parallel_Invoke();
+                        obj.Display();
 
-            Parallel_Invoke obj = new Parallel_Invoke();
+            */
+
+            /*
+                        clsAddNewPersonSQl obj = new clsAddNewPersonSQl();
+                        obj.Display();
+            */
+
+            clsCheckPersonExist obj = new clsCheckPersonExist();
             obj.Display();
+
         }
     }
 }
